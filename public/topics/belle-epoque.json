@@ -1,0 +1,199 @@
+{
+  "id": "belle-epoque",
+  "title": "La Belle Époque",
+  "subtitle": "L'età dell'oro europea",
+  "date": "1871–1914",
+  "description": "Un periodo di pace, prosperità e progresso tecnologico in Europa, caratterizzato da innovazioni, espansione coloniale e fiducia nel futuro, che precedette la Grande Guerra.",
+  "macros": [
+    {
+      "id": "progresso-tecnologico",
+      "title": "Il progresso tecnologico",
+      "date": "1871–1914",
+      "summary": "Innovazioni che cambiarono la vita quotidiana.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "L'invenzione della lampadina",
+          "date": "1879",
+          "content": "Edison perfeziona l'illuminazione elettrica."
+        },
+        {
+          "type": "event",
+          "title": "L'automobile",
+          "date": "1886",
+          "content": "Benz brevetta la prima automobile a motore a scoppio."
+        },
+        {
+          "type": "focus",
+          "title": "Il cinema",
+          "date": "1895",
+          "content": "I fratelli Lumière proiettano il primo film al pubblico."
+        },
+        {
+          "type": "event",
+          "title": "Il volo",
+          "date": "1903",
+          "content": "I fratelli Wright compiono il primo volo a motore."
+        },
+        {
+          "type": "text",
+          "title": "Le comunicazioni",
+          "content": "Telegrafo, telefono e radio trasformano le comunicazioni globali."
+        }
+      ]
+    },
+    {
+      "id": "espansione-coloniale",
+      "title": "L'espansione coloniale",
+      "date": "1871–1914",
+      "summary": "La corsa all'Africa e all'Asia.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "La Conferenza di Berlino",
+          "date": "1884–1885",
+          "content": "Le potenze europee si dividono l'Africa."
+        },
+        {
+          "type": "focus",
+          "title": "L'Impero britannico",
+          "content": "La Gran Bretagna controlla un quarto del globo."
+        },
+        {
+          "type": "event",
+          "title": "La corsa all'Africa",
+          "date": "1880–1914",
+          "content": "Tutte le potenze europee competono per il controllo del continente africano."
+        },
+        {
+          "type": "text",
+          "title": "Il dominio coloniale",
+          "content": "Sfruttamento delle risorse e imposizione della cultura europea."
+        }
+      ]
+    },
+    {
+      "id": "cultura-arte",
+      "title": "Cultura e arte",
+      "date": "1871–1914",
+      "summary": "Il fiorire delle arti e della cultura.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "L'Esposizione Universale di Parigi",
+          "date": "1889",
+          "content": "Viene inaugurata la Torre Eiffel, simbolo del progresso."
+        },
+        {
+          "type": "event",
+          "title": "L'Art Nouveau",
+          "date": "1890–1910",
+          "content": "Movimento artistico che caratterizza l'architettura e il design."
+        },
+        {
+          "type": "focus",
+          "title": "L'Impressionismo",
+          "content": "Movimento pittorico che rivoluziona l'arte europea."
+        },
+        {
+          "type": "list",
+          "title": "Grandi artisti del periodo",
+          "content": [
+            "Claude Monet",
+            "Vincent van Gogh",
+            "Gustav Klimt",
+            "Antoni Gaudí"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tensioni-preludio",
+      "title": "Tensioni e preludio alla guerra",
+      "date": "1900–1914",
+      "summary": "Le alleanze e le crisi che portarono al conflitto.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "La Triplice Alleanza",
+          "date": "1882",
+          "content": "Germania, Austria-Ungheria e Italia formano un'alleanza."
+        },
+        {
+          "type": "event",
+          "title": "L'Intesa Cordiale",
+          "date": "1904",
+          "content": "Accordo tra Francia e Gran Bretagna."
+        },
+        {
+          "type": "focus",
+          "title": "La crisi di Agadir",
+          "date": "1911",
+          "content": "Tensione tra Francia e Germania per il Marocco."
+        },
+        {
+          "type": "text",
+          "title": "La corsa agli armamenti",
+          "content": "Tutte le potenze aumentano le spese militari in preparazione al conflitto."
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quando venne proiettato il primo film al pubblico?",
+      "options": [
+        "1879",
+        "1886",
+        "1895",
+        "1903"
+      ],
+      "correctAnswer": 2,
+      "explanation": "I fratelli Lumière proiettarono il primo film al pubblico nel 1895."
+    },
+    {
+      "question": "Quale evento segnò la divisione dell'Africa tra le potenze europee?",
+      "options": [
+        "La Conferenza di Parigi",
+        "La Conferenza di Berlino",
+        "Il Congresso di Vienna",
+        "La Conferenza di Londra"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La Conferenza di Berlino (1884-1885) stabilì la divisione dell'Africa tra le potenze europee."
+    },
+    {
+      "question": "Chi inventò la prima automobile a motore a scoppio?",
+      "options": [
+        "Ford",
+        "Benz",
+        "Edison",
+        "Daimler"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Karl Benz brevettò la prima automobile a motore a scoppio nel 1886."
+    },
+    {
+      "question": "Quale movimento artistico caratterizzò l'architettura della Belle Époque?",
+      "options": [
+        "Barocco",
+        "Art Nouveau",
+        "Neoclassicismo",
+        "Bauhaus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "L'Art Nouveau (1890-1910) caratterizzò l'architettura e il design del periodo."
+    },
+    {
+      "question": "Quale alleanza formarono Germania, Austria-Ungheria e Italia?",
+      "options": [
+        "Triplice Intesa",
+        "Triplice Alleanza",
+        "Alleanza Centrale",
+        "Lega delle Nazioni"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La Triplice Alleanza (1882) unì Germania, Austria-Ungheria e Italia."
+    }
+  ]
+}

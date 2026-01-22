@@ -1,0 +1,154 @@
+{
+  "id": "rivoluzione-russa",
+  "title": "La Rivoluzione Russa",
+  "subtitle": "Dalla caduta dello zarismo al potere sovietico",
+  "date": "1917–1923",
+  "description": "La Rivoluzione Russa segna uno dei momenti più importanti del XX secolo, trasformando l'Impero russo in uno stato comunista e cambiando per sempre il corso della storia mondiale.",
+  "macros": [
+    {
+      "id": "rivoluzione-febbraio",
+      "title": "La Rivoluzione di Febbraio",
+      "date": "1917",
+      "summary": "La caduta dello zar e la fine dell'Impero russo.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "Scioperi a Pietrogrado",
+          "date": "febbraio 1917",
+          "content": "Manifestazioni e scioperi paralizzano la capitale russa."
+        },
+        {
+          "type": "focus",
+          "title": "L'abdicazione dello zar Nicola II",
+          "date": "15 marzo 1917",
+          "content": "Lo zar abdica, ponendo fine a secoli di autocrazia russa."
+        },
+        {
+          "type": "event",
+          "title": "Il Governo Provvisorio",
+          "date": "marzo 1917",
+          "content": "Viene formato un governo provvisorio guidato da liberali e socialisti moderati."
+        },
+        {
+          "type": "text",
+          "title": "I Soviet",
+          "content": "Consigli di operai e soldati che emergono come contropotere al governo provvisorio."
+        }
+      ]
+    },
+    {
+      "id": "rivoluzione-ottobre",
+      "title": "La Rivoluzione d'Ottobre",
+      "date": "1917",
+      "summary": "I bolscevichi prendono il potere.",
+      "micros": [
+        {
+          "type": "focus",
+          "title": "La presa del Palazzo d'Inverno",
+          "date": "7 novembre 1917",
+          "content": "I bolscevichi guidati da Lenin prendono il controllo di Pietrogrado."
+        },
+        {
+          "type": "event",
+          "title": "Il Decreto sulla Terra",
+          "date": "novembre 1917",
+          "content": "Tutti i terreni vengono nazionalizzati e distribuiti ai contadini."
+        },
+        {
+          "type": "event",
+          "title": "Il Decreto sulla Pace",
+          "date": "novembre 1917",
+          "content": "La Russia esce dalla Prima guerra mondiale."
+        },
+        {
+          "type": "text",
+          "title": "Il potere ai Soviet",
+          "content": "Lenin trasferisce tutto il potere ai Soviet, escludendo i partiti borghesi."
+        }
+      ]
+    },
+    {
+      "id": "guerra-civile",
+      "title": "La Guerra Civile",
+      "date": "1918–1922",
+      "summary": "Il conflitto tra Rossi e Bianchi.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "L'Armata Bianca",
+          "date": "1918",
+          "content": "Forze controrivoluzionarie si organizzano per rovesciare i bolscevichi."
+        },
+        {
+          "type": "event",
+          "title": "Il Terrore Rosso",
+          "date": "1918–1922",
+          "content": "Repressione violenta degli oppositori da parte della Ceka."
+        },
+        {
+          "type": "focus",
+          "title": "La vittoria dei Rossi",
+          "date": "1922",
+          "content": "I bolscevichi vincono la guerra civile e consolidano il potere."
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quando abdicò lo zar Nicola II?",
+      "options": [
+        "15 marzo 1917",
+        "7 novembre 1917",
+        "25 ottobre 1917",
+        "1 gennaio 1918"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lo zar Nicola II abdicò il 15 marzo 1917, ponendo fine a secoli di autocrazia russa."
+    },
+    {
+      "question": "Chi guidò i bolscevichi nella Rivoluzione d'Ottobre?",
+      "options": [
+        "Stalin",
+        "Trotsky",
+        "Lenin",
+        "Kerensky"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Lenin guidò i bolscevichi nella presa del Palazzo d'Inverno il 7 novembre 1917."
+    },
+    {
+      "question": "Cosa stabilì il Decreto sulla Terra del 1917?",
+      "options": [
+        "La nazionalizzazione delle industrie",
+        "La nazionalizzazione e distribuzione dei terreni",
+        "L'abolizione della proprietà privata",
+        "La riforma agraria graduale"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Il Decreto sulla Terra nazionalizzò tutti i terreni e li distribuì ai contadini."
+    },
+    {
+      "question": "Chi erano i 'Rossi' durante la Guerra Civile russa?",
+      "options": [
+        "I controrivoluzionari",
+        "I bolscevichi",
+        "I menscevichi",
+        "I cadetti"
+      ],
+      "correctAnswer": 1,
+      "explanation": "I 'Rossi' erano i bolscevichi, che vinsero la guerra civile contro i 'Bianchi' (controrivoluzionari)."
+    },
+    {
+      "question": "Cosa erano i Soviet?",
+      "options": [
+        "Partiti politici",
+        "Consigli di operai e soldati",
+        "Organi di governo",
+        "Sindacati"
+      ],
+      "correctAnswer": 1,
+      "explanation": "I Soviet erano consigli di operai e soldati che emersero come contropotere al governo provvisorio."
+    }
+  ]
+}

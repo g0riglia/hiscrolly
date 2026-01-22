@@ -1,0 +1,161 @@
+{
+  "id": "prima-guerra-mondiale",
+  "title": "La Prima Guerra Mondiale",
+  "subtitle": "Il conflitto che cambiò il mondo",
+  "date": "1914–1918",
+  "description": "La Grande Guerra segna l'inizio del XX secolo con un conflitto di proporzioni mai viste prima, che coinvolse tutte le maggiori potenze mondiali e causò milioni di vittime.",
+  "macros": [
+    {
+      "id": "scoppio-guerra",
+      "title": "Lo scoppio della guerra",
+      "date": "1914",
+      "summary": "L'assassinio di Sarajevo e la mobilitazione generale.",
+      "micros": [
+        {
+          "type": "focus",
+          "title": "L'assassinio di Francesco Ferdinando",
+          "date": "28 giugno 1914",
+          "content": "L'arciduca d'Austria viene ucciso a Sarajevo da un nazionalista serbo."
+        },
+        {
+          "type": "event",
+          "title": "L'ultimatum austriaco",
+          "date": "23 luglio 1914",
+          "content": "L'Austria-Ungheria invia un ultimatum inaccettabile alla Serbia."
+        },
+        {
+          "type": "event",
+          "title": "La mobilitazione russa",
+          "date": "30 luglio 1914",
+          "content": "La Russia mobilita in sostegno della Serbia."
+        },
+        {
+          "type": "event",
+          "title": "La dichiarazione di guerra",
+          "date": "1 agosto 1914",
+          "content": "La Germania dichiara guerra alla Russia, inizia il conflitto."
+        }
+      ]
+    },
+    {
+      "id": "guerra-totale",
+      "title": "La guerra totale",
+      "date": "1914–1918",
+      "summary": "Trincee, nuove armi e milioni di vittime.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "La guerra di trincea",
+          "date": "1914–1918",
+          "content": "Il fronte occidentale si stabilizza in una guerra di posizione."
+        },
+        {
+          "type": "event",
+          "title": "L'uso dei gas",
+          "date": "1915",
+          "content": "Primo uso massiccio di gas velenosi sul campo di battaglia."
+        },
+        {
+          "type": "focus",
+          "title": "La battaglia di Verdun",
+          "date": "1916",
+          "content": "Una delle battaglie più sanguinose della storia, oltre 300.000 morti."
+        },
+        {
+          "type": "event",
+          "title": "L'entrata degli Stati Uniti",
+          "date": "1917",
+          "content": "Gli USA entrano in guerra a fianco dell'Intesa."
+        },
+        {
+          "type": "text",
+          "title": "La guerra in mare",
+          "content": "Sottomarini tedeschi e battaglie navali nel Mare del Nord."
+        }
+      ]
+    },
+    {
+      "id": "fine-guerra",
+      "title": "La fine della guerra",
+      "date": "1918",
+      "summary": "La sconfitta degli Imperi Centrali.",
+      "micros": [
+        {
+          "type": "event",
+          "title": "L'offensiva di primavera",
+          "date": "1918",
+          "content": "Ultimo tentativo tedesco di vincere prima dell'arrivo degli americani."
+        },
+        {
+          "type": "event",
+          "title": "La rivoluzione in Germania",
+          "date": "novembre 1918",
+          "content": "L'imperatore Guglielmo II abdica, nasce la Repubblica di Weimar."
+        },
+        {
+          "type": "focus",
+          "title": "L'armistizio",
+          "date": "11 novembre 1918",
+          "content": "Firma dell'armistizio che pone fine alle ostilità."
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quale evento scatenò la Prima guerra mondiale?",
+      "options": [
+        "L'invasione del Belgio",
+        "L'assassinio di Francesco Ferdinando",
+        "La mobilitazione russa",
+        "L'ultimatum alla Serbia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "L'assassinio dell'arciduca Francesco Ferdinando a Sarajevo il 28 giugno 1914 fu l'evento scatenante."
+    },
+    {
+      "question": "Quando venne firmato l'armistizio che pose fine alla guerra?",
+      "options": [
+        "11 novembre 1918",
+        "28 giugno 1919",
+        "1 agosto 1914",
+        "25 dicembre 1918"
+      ],
+      "correctAnswer": 0,
+      "explanation": "L'armistizio venne firmato l'11 novembre 1918, ponendo fine alle ostilità."
+    },
+    {
+      "question": "Quale fu una delle battaglie più sanguinose della guerra?",
+      "options": [
+        "Battaglia della Marna",
+        "Battaglia di Verdun",
+        "Battaglia della Somme",
+        "Battaglia di Tannenberg"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La battaglia di Verdun (1916) causò oltre 300.000 morti, una delle più sanguinose della storia."
+    },
+    {
+      "question": "Quando entrarono in guerra gli Stati Uniti?",
+      "options": [
+        "1915",
+        "1916",
+        "1917",
+        "1918"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Gli Stati Uniti entrarono in guerra nel 1917 a fianco dell'Intesa."
+    },
+    {
+      "question": "Quale nuova arma venne usata per la prima volta massicciamente nella Prima guerra mondiale?",
+      "options": [
+        "I carri armati",
+        "I gas velenosi",
+        "Gli aerei",
+        "I sottomarini"
+      ],
+      "correctAnswer": 1,
+      "explanation": "I gas velenosi vennero usati per la prima volta massicciamente nel 1915."
+    }
+  ]
+}

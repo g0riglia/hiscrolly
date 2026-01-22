@@ -1,0 +1,50 @@
+.container {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin-left: 1.2em; /* Align with card's left edge (accounting for card padding) */
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.line {
+    position: relative;
+    width: 3px;
+    background-color: var(--color-timeline-accent);
+    flex-shrink: 0;
+    align-self: stretch;
+    margin-top: calc(-1rem - 1px); /* Extend up to connect with macro above */
+    margin-bottom: calc(-3rem); /* Extend down to connect with macro below */
+}
+
+.content {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 1rem;
+}
+
+.contentItem {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-left: 0.5rem;
+}
+
+.connector {
+    position: absolute;
+    left: calc(-1.5rem - 1.5px); /* Position to connect with timeline line */
+    top: 0.5rem;
+    width: calc(1.5rem + 1.5px); /* Width to reach the timeline line */
+    height: 2px;
+    background-color: var(--color-timeline-accent);
+    flex-shrink: 0;
+}
+
+.contentBody {
+    flex: 1;
+    margin-left: 0;
+}

@@ -1,0 +1,31 @@
+.page {
+    background-color: var(--color-pastel-lavender);
+    margin-top: 10em;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(280, 40%, 60%, 0.2);
+}
+
+.date {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: .8em;
+}
+
+.page > h4 {
+    margin-top: 1em;
+}
+
+@media (min-width: 700px) {
+    .header > h3 {
+        font-size: 1.5rem;
+    }
+
+    .date {
+        font-size: 1.25rem;
+    }
+
+    .page > h4 {
+        font-size: 1.25rem;
+    }
+}

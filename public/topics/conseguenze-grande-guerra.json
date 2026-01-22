@@ -1,0 +1,216 @@
+{
+    "id": "conseguenze-grande-guerra",
+    "title": "Le conseguenze della Grande Guerra",
+    "subtitle": "Il mondo dopo la Prima guerra mondiale",
+    "date": "1918–1923",
+    "description": "La Prima guerra mondiale ha cambiato l’Europa e il mondo, portando alla nascita di nuovi stati e profonde tensioni sociali e politiche. In questa lezione esploreremo il dopoguerra, le rivoluzioni, i trattati di pace e le trasformazioni internazionali e nazionali.",
+    "macros": [
+      {
+        "id": "europa-dopoguerra",
+        "title": "L’Europa dopo la guerra",
+        "date": "1918–1921",
+        "summary": "Rivoluzioni nei paesi sconfitti e una pace instabile.",
+        "micros": [
+          {
+            "type": "event",
+            "title": "Crisi nei paesi sconfitti",
+            "date": "1918–1919",
+            "content": "Germania, Austria e Ungheria affrontano carestie, inflazione e instabilità politica."
+          },
+          {
+            "type": "event",
+            "title": "I moti spartachisti",
+            "date": "1919",
+            "content": "A Berlino la Lega di Spartaco tenta una rivoluzione comunista, repressa dal governo tedesco."
+          },
+          {
+            "type": "event",
+            "title": "La Repubblica dei Consigli",
+            "date": "1919",
+            "content": "In Ungheria nasce una repubblica socialista ispirata alla Russia sovietica, che dura pochi mesi."
+          },
+          {
+            "type": "focus",
+            "title": "La Conferenza di Versailles",
+            "date": "1919",
+            "content": "I vincitori impongono una pace punitiva alla Germania, considerata responsabile della guerra."
+          },
+          {
+            "type": "text",
+            "title": "La Società delle Nazioni",
+            "content": "Nasce per garantire la pace, ma è debole: gli Stati Uniti non vi aderiscono."
+          },
+          {
+            "type": "event",
+            "title": "La Repubblica di Weimar",
+            "date": "1919",
+            "content": "In Germania cade l’impero e nasce una repubblica democratica, fragile e contestata."
+          },
+          {
+            "type": "list",
+            "title": "Nuovi stati in Europa",
+            "content": [
+              "Polonia",
+              "Finlandia",
+              "Estonia, Lettonia, Lituania",
+              "Cecoslovacchia",
+              "Regno di Jugoslavia"
+            ]
+          },
+          {
+            "type": "event",
+            "title": "Fine dell’Impero ottomano",
+            "date": "1920",
+            "content": "Con il trattato di Sèvres l’impero viene smembrato; nasce la Repubblica turca."
+          }
+        ]
+      },
+      {
+        "id": "italia-biennio-rosso",
+        "title": "L’Italia e il Biennio rosso",
+        "date": "1919–1920",
+        "summary": "Crisi sociale, vittoria mutilata e tensioni politiche.",
+        "micros": [
+          {
+            "type": "focus",
+            "title": "La vittoria mutilata",
+            "content": "L’Italia ottiene Trentino, Alto Adige e Trieste, ma non Fiume e la Dalmazia."
+          },
+          {
+            "type": "event",
+            "title": "L’impresa di Fiume",
+            "date": "1919",
+            "content": "D’Annunzio occupa Fiume e proclama la Reggenza italiana del Carnaro."
+          },
+          {
+            "type": "event",
+            "title": "Il trattato di Rapallo",
+            "date": "1920",
+            "content": "Italia e Jugoslavia trovano un accordo; D’Annunzio si arrende."
+          },
+          {
+            "type": "event",
+            "title": "Le elezioni del 1919",
+            "content": "Avanzano socialisti e popolari; crisi dei partiti liberali."
+          },
+          {
+            "type": "event",
+            "title": "Le occupazioni delle fabbriche",
+            "date": "1920",
+            "content": "Operai occupano le fabbriche; Giolitti sceglie di non reprimere."
+          },
+          {
+            "type": "text",
+            "title": "Il Biennio rosso",
+            "content": "Scioperi, inflazione e paura della rivoluzione segnano il dopoguerra italiano."
+          }
+        ]
+      },
+      {
+        "id": "guerra-colonialismo",
+        "title": "Guerra e colonialismo",
+        "date": "1918–1925",
+        "summary": "Tensioni globali e controllo coloniale.",
+        "micros": [
+          {
+            "type": "event",
+            "title": "Il Medio Oriente sotto controllo europeo",
+            "content": "Francia e Gran Bretagna ottengono mandati su vaste aree ex ottomane."
+          },
+          {
+            "type": "event",
+            "title": "La dichiarazione Balfour",
+            "date": "1917",
+            "content": "Il Regno Unito sostiene la creazione di una patria ebraica in Palestina."
+          },
+          {
+            "type": "text",
+            "title": "Una convivenza difficile",
+            "content": "In Palestina crescono le tensioni tra popolazione araba ed ebraica."
+          }
+        ]
+      },
+      {
+        "id": "india-gandhi",
+        "title": "La crisi dell’imperialismo inglese in India",
+        "date": "1919–1930",
+        "summary": "La nascita di un movimento nazionale non violento.",
+        "micros": [
+          {
+            "type": "event",
+            "title": "Il malcontento indiano",
+            "content": "Dopo la guerra aumentano tasse e repressione britannica."
+          },
+          {
+            "type": "focus",
+            "title": "Gandhi",
+            "content": "Leader del movimento indipendentista, promotore della non violenza."
+          },
+          {
+            "type": "event",
+            "title": "La marcia del sale",
+            "date": "1930",
+            "content": "Atto simbolico contro il monopolio britannico sul sale."
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quale trattato impose una pace punitiva alla Germania dopo la Prima guerra mondiale?",
+        "options": [
+          "Trattato di Versailles",
+          "Trattato di Rapallo",
+          "Trattato di Sèvres",
+          "Trattato di Brest-Litovsk"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il Trattato di Versailles (1919) impose condizioni molto dure alla Germania, considerata responsabile della guerra."
+      },
+      {
+        "question": "Chi guidò l'impresa di Fiume nel 1919?",
+        "options": [
+          "Mussolini",
+          "D'Annunzio",
+          "Giolitti",
+          "Nitti"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Gabriele D'Annunzio occupò Fiume e proclamò la Reggenza italiana del Carnaro."
+      },
+      {
+        "question": "Quale nuovo stato nacque dalla fine dell'Impero ottomano?",
+        "options": [
+          "Repubblica di Turchia",
+          "Regno di Grecia",
+          "Repubblica di Siria",
+          "Regno di Iraq"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Con il Trattato di Sèvres l'Impero ottomano venne smembrato e nacque la Repubblica turca."
+      },
+      {
+        "question": "Cosa si intende con 'vittoria mutilata' in Italia?",
+        "options": [
+          "La sconfitta nella guerra",
+          "L'insoddisfazione per i territori ottenuti",
+          "La rivoluzione fallita",
+          "La crisi economica"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'Italia ottenne Trentino, Alto Adige e Trieste, ma non Fiume e la Dalmazia come promesso."
+      },
+      {
+        "question": "Quale organizzazione internazionale nacque per garantire la pace ma fallì?",
+        "options": [
+          "ONU",
+          "Società delle Nazioni",
+          "Lega delle Nazioni",
+          "Alleanza per la Pace"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La Società delle Nazioni nacque nel 1919 ma fu debole, soprattutto perché gli USA non vi aderirono."
+      }
+    ]
+  }
+  

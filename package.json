@@ -9,13 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "js-cookie": "^3.0.5",
+    "motion": "^12.29.0",
+    "next": "15.5.4",
     "react": "19.1.0",
+    "react-confetti": "^6.4.0",
     "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-feather": "^2.0.10",
+    "react-focus-lock": "^2.13.7",
+    "react-remove-scroll": "^2.7.2"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.5.4",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "15.5.4"
   }
 }
