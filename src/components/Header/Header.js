@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import { SITE_TITLE } from "@/utils/constants";
-import { Sun, Moon } from "react-feather";
+import { Sun, Moon, User } from "react-feather";
 import Cookie from "js-cookie";
 import { LIGHT_TOKENS, DARK_TOKENS } from "@/utils/constants";
 
@@ -38,7 +38,8 @@ function Header({ initialTheme = "light" }) {
         <header className={styles.header}>
             <Link href="/">{SITE_TITLE}</Link>
             <div className={styles.buttons}>
-                <button onClick={handleToggleDarkMode}>{theme === 'light' ? <Sun /> : <Moon />}</button>
+                <button className={styles.button} onClick={handleToggleDarkMode}>{theme === 'light' ? <Sun /> : <Moon />}</button>
+                <Link className={styles.button} href="/user"><User /></Link>
             </div>
         </header>
     );

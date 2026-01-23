@@ -3,6 +3,7 @@ import { SITE_TITLE, LIGHT_TOKENS, DARK_TOKENS } from "@/utils/constants";
 import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GeneratedTimelineProvider from "@/components/GeneratedTimelineProvider";
 import { cookies } from "next/headers";
 
 const poppins = Poppins({
@@ -86,11 +87,13 @@ async function RootLayout({ children }) {
   return (
     <html lang="it" className={poppins.variable} data-color-theme={theme} style={theme === "light" ? LIGHT_TOKENS : DARK_TOKENS}>
       <body>
-        <div className="mainContainer">
-          <Header initialTheme={theme} />
-          {children}
-          <Footer />
-        </div>
+        <GeneratedTimelineProvider>
+          <div className="mainContainer">
+            <Header initialTheme={theme} />
+            {children}
+            <Footer />
+          </div>
+        </GeneratedTimelineProvider>
       </body>
     </html>
   );
