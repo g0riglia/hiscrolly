@@ -2,6 +2,8 @@ import styles from "./page.module.css";
 import { getAllTopics } from "@/utils/utils";
 import TopicCard from "@/components/TopicCard";
 import Link from "next/link";
+import ScrollButton from "@/components/ScrollButton";
+import TopicsList from "@/components/TopicsList";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -49,13 +51,18 @@ async function Home() {
       />
       <div className={styles.page}>
         <main className={styles.main}>
-          <p className={styles.welcome}>Benvenuto in Hiscrolly: esplora la storia scrollando e scopri gli eventi che hanno cambiato il mondo.</p>
-          <h1>Argomenti più recenti:</h1>
-          <div className={styles.topicsList}>
-            {topicsList.map(topic => (
-              <TopicCard key={topic.id} topic={topic} />
-            ))}
+          <div className={styles.hero}>
+            <h1>Trasforma la storia in un timeline</h1>
+            <p>Trasforma un argomento, un PDF o degli appunti in una timeline interattiva, semplice e visiva.</p>
+            <div className={styles.ctas}>
+              <Link href="/create" className={styles.primary}>Crea ora</Link>
+              <ScrollButton targetId="topics-section" className={styles.secondary}>
+                Esplora timeline già create
+              </ScrollButton>
+            </div>
           </div>
+          <h2 id="topics-section">Argomenti già creati:</h2>
+          <TopicsList topics={topicsList} />
         </main>
       </div>
     </>

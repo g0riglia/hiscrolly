@@ -1,0 +1,124 @@
+.page {
+    background-color: var(--color-pastel-lavender);
+    margin-top: 10em;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(280, 40%, 60%, 0.2);
+}
+
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.header > h1 {
+    font-size: 1.75rem;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.titleWithButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button {
+    background-color: var(--color-timeline-accent);
+    color: var(--color-gray-0);
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0 var(--color-macro-card-border);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0 var(--color-macro-card-border);
+    background-color: var(--color-macro-card-accent);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 1px 1px 0 var(--color-macro-card-border);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--color-event-text);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.date {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: .8em;
+    color: var(--color-event-text);
+}
+
+.page > h2 {
+    margin-top: 1em;
+    color: var(--color-text);
+}
+
+.emptyState {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.emptyState > h2 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.emptyState > p {
+    color: var(--color-event-text);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.createButton {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--color-timeline-accent);
+    color: var(--color-gray-0);
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 4px 4px 0 var(--color-macro-card-border);
+}
+
+.createButton:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 8px 8px 0 var(--color-macro-card-border),
+                0 0 20px rgba(280, 50%, 60%, 0.3);
+    background-color: var(--color-macro-card-accent);
+}
+
+@media (min-width: 700px) {
+    .header > h1 {
+        font-size: 2rem;
+    }
+
+    .date {
+        font-size: 1.25rem;
+    }
+
+    .page > h2 {
+        font-size: 1.25rem;
+    }
+}
