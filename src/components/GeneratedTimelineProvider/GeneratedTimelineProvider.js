@@ -19,6 +19,10 @@ function GeneratedTimelineProvider({ children }) {
         setTimelines(prev => [timeline, ...prev]);
     };
 
+    const updateTimeline = (index, updatedTimeline) => {
+        setTimelines(prev => prev.map((t, i) => i === index ? updatedTimeline : t));
+    };
+
     // Get the most recent timeline (first in array)
     const latestTimeline = timelines && timelines.length > 0 ? timelines[0] : null;
 
@@ -29,6 +33,7 @@ function GeneratedTimelineProvider({ children }) {
             addTimeline,
             deleteTimeline,
             uploadTimeline,
+            updateTimeline,
             latestTimeline
         }}>
             {children}

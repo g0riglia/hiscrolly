@@ -70,3 +70,70 @@
 .card:hover .cta > svg {
     transform: translateX(4px);
 }
+
+/* Edit mode styles */
+.editCard {
+    cursor: default;
+    border-color: var(--color-timeline-accent);
+    background-color: var(--color-gray-0);
+}
+
+.editCard:hover {
+    transform: none;
+    box-shadow: 8px 8px 0 var(--color-timeline-accent);
+    background-color: var(--color-gray-0);
+}
+
+.editControls {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.8em;
+    border-bottom: 1px dashed var(--color-timeline-accent);
+}
+
+.controlBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: var(--color-gray-0);
+    border: 2px solid var(--color-timeline-accent);
+    border-radius: 8px;
+    color: var(--color-timeline-accent);
+    cursor: pointer;
+    transition:
+        transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.controlBtn:hover:not(:disabled) {
+    transform: scale(1.1);
+    background-color: var(--color-timeline-accent);
+    color: var(--color-gray-0);
+}
+
+.controlBtn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.controlBtn > svg {
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+}
+
+.deleteBtn {
+    margin-left: auto;
+    border-color: hsl(0deg 60% 50%);
+    color: hsl(0deg 60% 50%);
+}
+
+.deleteBtn:hover:not(:disabled) {
+    background-color: hsl(0deg 60% 50%);
+    color: var(--color-gray-0);
+}

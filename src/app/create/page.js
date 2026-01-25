@@ -2,7 +2,11 @@
 import { useState, useContext } from "react";
 import { useRouter } from "next/navigation";
 import { GeneratedTimelineContext } from "@/components/GeneratedTimelineProvider/GeneratedTimelineProvider";
+import * as pdfjsLib from "pdfjs-dist";
 import styles from "./page.module.css"
+
+// Set up pdf.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
 function CreatePage() {
     const router = useRouter();
@@ -65,10 +69,15 @@ function CreatePage() {
                 throw err;
             }
         }
-        // Handle PDF files - note: browser can't read PDF directly
+        // Handle PDF files
         else if (fileType === "application/pdf" || fileName.endsWith(".pdf")) {
-            setError("I file PDF richiedono un'elaborazione speciale. Per ora, usa file di testo (.txt) o converti il PDF in testo.");
-            throw new Error("PDF not directly supported");
+            try {
+                const extractedText = await extractTextFromPDF(file);
+                return extractedText;
+            } catch (err) {
+                setError("Errore nell'estrazione del testo dal PDF. Assicurati che il PDF contenga testo selezionabile.");
+                throw err;
+            }
         }
         // Handle Word documents - also need special handling
         else if (
@@ -106,9 +115,30 @@ function CreatePage() {
             const data = await response.json();
             return data.text;
         } catch (error) {
-            // Fallback: show error and suggest alternative
             throw new Error("La trascrizione audio richiede un servizio di trascrizione. Per ora, usa file di testo o converti l'audio in testo.");
         }
+    };
+
+    const extractTextFromPDF = async (pdfFile) => {
+        const arrayBuffer = await pdfFile.arrayBuffer();
+        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        
+        let fullText = "";
+        
+        for (let i = 1; i <= pdf.numPages; i++) {
+            const page = await pdf.getPage(i);
+            const textContent = await page.getTextContent();
+            const pageText = textContent.items
+                .map(item => item.str)
+                .join(" ");
+            fullText += pageText + "\n\n";
+        }
+        
+        if (!fullText.trim()) {
+            throw new Error("Il PDF non contiene testo estraibile. Potrebbe essere un PDF scansionato.");
+        }
+        
+        return fullText.trim();
     };
 
     const handleSubmit = async (e) => {
