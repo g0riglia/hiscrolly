@@ -13,8 +13,10 @@
 }
 
 .createButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   text-decoration: none;
-  color: inherit;
   padding: 0.5em 1em;
   border-radius: 25px;
   background-color: var(--color-timeline-accent);
@@ -24,10 +26,7 @@
   transition:
     transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
     box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    color 0.3s ease;
-  display: inline-block;
+    background-color 0.3s ease;
 }
 
 .createButton:hover,
@@ -50,6 +49,12 @@
 
 .header > h2 {
   margin: 0;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 0.75em;
+  flex-wrap: wrap;
 }
 
 .uploadButton {

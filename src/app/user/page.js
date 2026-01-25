@@ -5,7 +5,7 @@ import { GeneratedTimelineContext } from "@/components/GeneratedTimelineProvider
 import TopicCard from "@/components/TopicCard";
 import TopicsList from "@/components/TopicsList";
 import Link from "next/link";
-import { Upload } from "react-feather";
+import { Upload, PlusCircle } from "react-feather";
 
 function UserPage() {
     const { timelines, uploadTimeline } = useContext(GeneratedTimelineContext);
@@ -32,7 +32,7 @@ function UserPage() {
 
             uploadTimeline(timeline);
             alert('Timeline caricata con successo!');
-            
+
             // Reset file input
             if (fileInputRef.current) {
                 fileInputRef.current.value = '';
@@ -47,17 +47,23 @@ function UserPage() {
         <div className={styles.page}>
             <div className={styles.header}>
                 <h2>Le tue timelines</h2>
-                <label className={styles.uploadButton}>
-                    <Upload size={18} />
-                    <span>Carica timeline</span>
-                    <input
-                        ref={fileInputRef}
-                        type="file"
-                        accept=".json"
-                        onChange={handleFileUpload}
-                        style={{ display: 'none' }}
-                    />
-                </label>
+                <div className={styles.headerButtons}>
+                    <Link href="/create" className={styles.createButton}>
+                        <PlusCircle size={18} />
+                        <span>Crea nuova</span>
+                    </Link>
+                    <label className={styles.uploadButton}>
+                        <Upload size={18} />
+                        <span>Carica</span>
+                        <input
+                            ref={fileInputRef}
+                            type="file"
+                            accept=".json"
+                            onChange={handleFileUpload}
+                            style={{ display: 'none' }}
+                        />
+                    </label>
+                </div>
             </div>
             {!timelines || timelines.length === 0 ? (
                 <div className={styles.emptyState}>
@@ -67,8 +73,8 @@ function UserPage() {
                     </Link>
                 </div>
             ) : (
-                <TopicsList 
-                    topics={timelines} 
+                <TopicsList
+                    topics={timelines}
                     getHref={(topic, index) => `/user/${index}`}
                 />
             )}

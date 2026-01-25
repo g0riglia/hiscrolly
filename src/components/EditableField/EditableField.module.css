@@ -1,0 +1,29 @@
+.input {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--color-text);
+    background-color: var(--color-gray-0);
+    border: 2px solid var(--color-timeline-accent);
+    border-radius: 8px;
+    padding: 0.4em 0.6em;
+    width: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-macro-card-accent);
+    box-shadow: 0 0 0 3px var(--color-pastel-lavender);
+}
+
+.input::placeholder {
+    color: var(--color-gray-500);
+    opacity: 0.7;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 60px;
+    line-height: 1.5;
+}

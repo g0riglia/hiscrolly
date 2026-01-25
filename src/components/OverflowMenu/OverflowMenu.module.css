@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+}
+
+.primaryBtn {
+  background-color: var(--color-timeline-accent);
+  color: var(--color-gray-0);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 0 var(--color-macro-card-border);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--color-macro-card-border);
+  background-color: var(--color-macro-card-accent);
+}
+
+.primaryBtn:active {
+  transform: translateY(0);
+  box-shadow: 1px 1px 0 var(--color-macro-card-border);
+}
+
+.buttons {
+  position: absolute;
+  background-color: var(--color-gray-100);
+  right: 0.2em;
+  top: 1.45em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button {
+  background-color: inherit;
+  color: var(--color-text);
+  text-align: start;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.8em 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-gray-300);
+}
+
+.button > svg {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  flex-shrink: 0;
+  pointer-events: none;
+}
