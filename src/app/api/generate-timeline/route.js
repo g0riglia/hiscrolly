@@ -30,6 +30,16 @@ Return ONLY a valid JSON object matching this exact structure:
   "subtitle": "Subtitle describing the period/topic",
   "date": "StartYear–EndYear",
   "description": "2-3 sentence description of the topic",
+  "before": {
+    "title": "Title in Italian of the most important event or context that happened BEFORE this period",
+    "date": "Year or YearRange",
+    "content": "Brief description of this prior event and how it led to or connects to the timeline topic"
+  },
+  "after": {
+    "title": "Title in Italian of the most important event or context that happened AFTER this period",
+    "date": "Year or YearRange",
+    "content": "Brief description of this subsequent event and its consequences or connection to the timeline topic"
+  },
   "macros": [
     {
       "id": "kebab-case-macro-id",
@@ -66,6 +76,7 @@ Return ONLY a valid JSON object matching this exact structure:
 
 IMPORTANT:
 - Do NOT include any text before or after the JSON
+- Always include "before" and "after": one key prior event/context and one key subsequent event/context that frame the timeline
 - Ensure all dates are historically accurate
 - Use proper Italian grammar and historical terminology
 - If topic is not historical, return error JSON only`;

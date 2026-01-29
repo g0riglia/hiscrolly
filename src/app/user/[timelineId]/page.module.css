@@ -154,6 +154,65 @@
   background-color: var(--color-macro-card-accent);
 }
 
+.eventsBeforeAfter {
+  margin: 1em;
+}
+
+.beforeAfter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.before,
+.after {
+  display: flex;
+  gap: 0.5em;
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
+  padding: 0.5em 0.75em;
+  border-radius: 8px;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+  width: 100%;
+}
+
+.before:hover,
+.after:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--color-timeline-accent) 12%,
+    transparent
+  );
+  transform: translateX(4px);
+}
+
+.before {
+  justify-content: start;
+  border-bottom: 2px dashed var(--color-timeline-accent);
+}
+
+.before:hover {
+  border-bottom-color: var(--color-timeline-accent);
+  border-bottom-style: solid;
+  box-shadow: 0 2px 8px
+    color-mix(in srgb, var(--color-timeline-accent) 20%, transparent);
+}
+
+.after {
+  justify-content: end;
+}
+
+.after:hover {
+  transform: translateX(-4px);
+  box-shadow: 0 2px 8px
+    color-mix(in srgb, var(--color-timeline-accent) 20%, transparent);
+}
+
 @media (min-width: 700px) {
   .titleWithButtons {
     align-items: center;

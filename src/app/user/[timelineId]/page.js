@@ -4,7 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useImmerReducer } from "use-immer";
 import styles from "./page.module.css";
 import { GeneratedTimelineContext } from "@/components/GeneratedTimelineProvider";
-import { Download, Trash2, Edit, Check, X } from "react-feather";
+import { Download, Trash2, Edit, Check, X, ArrowLeft, ArrowRight } from "react-feather";
 import Timeline from "@/components/Timeline";
 import OverflowMenu from "@/components/OverflowMenu";
 import Quiz from "@/components/Quiz";
@@ -348,6 +348,19 @@ function UserTimelinePage() {
                     </>
                 )}
             </div>
+            {timeline.before || timeline.after ?
+                (
+                    <>
+                        <h3 className={styles.eventsBeforeAfter}>Scopri come gli eventi sono collegati nel tempo</h3>
+                        <div className={styles.beforeAfter}>
+                            {timeline.before ? (
+                                <Link className={styles.before} href={`/create?topic=${timeline.before.title}`}><ArrowLeft /> {timeline.before.title}</Link>) : null}
+                            {timeline.before ? (
+                                <Link className={styles.after} href={`/create?topic=${timeline.after.title}`}>{timeline.after.title} <ArrowRight /></Link>) : null}
+
+                        </div>
+                    </>)
+                : null}
         </>
     );
 }
