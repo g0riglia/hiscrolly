@@ -10,7 +10,7 @@ function CreatePage() {
     const searchParams = useSearchParams();
     const initialTopic = searchParams ? searchParams.get("topic") : "";
     const { addTimeline } = useContext(GeneratedTimelineContext);
-    const [topic, setTopic] = useState(initialTopic);
+    const [topic, setTopic] = useState(initialTopic && "");
     const [file, setFile] = useState(null);
     const [fileContent, setFileContent] = useState(null);
     const [detailLevel, setDetailLevel] = useState("Medio");
@@ -240,7 +240,7 @@ function CreatePage() {
                 <button
                     type="submit"
                     className={styles.submitButton}
-                    disabled={isLoading || !topic.trim()}
+                    disabled={isLoading || !(topic ?? "").trim()}
                 >
                     {isLoading ? "Generazione in corso..." : "Genera timeline"}
                 </button>
