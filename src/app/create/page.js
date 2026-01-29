@@ -2,16 +2,15 @@
 import { useState, useContext } from "react";
 import { useRouter } from "next/navigation";
 import { GeneratedTimelineContext } from "@/components/GeneratedTimelineProvider/GeneratedTimelineProvider";
-import * as pdfjsLib from "pdfjs-dist";
 import styles from "./page.module.css"
-
-// Set up pdf.js worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+import { useSearchParams } from "next/navigation";
 
 function CreatePage() {
     const router = useRouter();
+    const searchParams = useSearchParams();
+    const initialTopic = searchParams ? searchParams.get("topic") : "";
     const { addTimeline } = useContext(GeneratedTimelineContext);
-    const [topic, setTopic] = useState("");
+    const [topic, setTopic] = useState(initialTopic);
     const [file, setFile] = useState(null);
     const [fileContent, setFileContent] = useState(null);
     const [detailLevel, setDetailLevel] = useState("Medio");
@@ -120,24 +119,27 @@ function CreatePage() {
     };
 
     const extractTextFromPDF = async (pdfFile) => {
+        const pdfjsLib = await import("pdfjs-dist");
+        pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+
         const arrayBuffer = await pdfFile.arrayBuffer();
         const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
-        
+
         let fullText = "";
-        
+
         for (let i = 1; i <= pdf.numPages; i++) {
             const page = await pdf.getPage(i);
             const textContent = await page.getTextContent();
             const pageText = textContent.items
-                .map(item => item.str)
+                .map((item) => item.str)
                 .join(" ");
             fullText += pageText + "\n\n";
         }
-        
+
         if (!fullText.trim()) {
             throw new Error("Il PDF non contiene testo estraibile. Potrebbe essere un PDF scansionato.");
         }
-        
+
         return fullText.trim();
     };
 
@@ -169,7 +171,7 @@ function CreatePage() {
             if (data && data.title && addTimeline) {
                 // Add timeline to the array (will be first/latest)
                 addTimeline(data);
-                
+
                 // Use window.location for a hard redirect to ensure page reloads and reads from localStorage
                 window.location.href = "/user/0";
             } else if (!addTimeline) {
